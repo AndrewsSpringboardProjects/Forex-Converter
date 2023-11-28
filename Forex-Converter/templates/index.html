@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>ForexConverter</title>
+    <link rel="stylesheet" href="/static/forex.css">
+  </head>
+  <body>
+    <section class="ForexConverter">
+
+      <form action="/convert" method="POST">
+        <label for="convertFrom">Convert From</label>
+        <input name="convertFrom" class="convertFrom">
+        <br>
+        <label for="convertTo">Convert To</label>
+        <input name="convertTo" class="convertTo">
+        <br>
+        <label for="amount">Amount</label>
+        <input name="amount" class="amount">
+        <br>
+        <button>Convert</button>
+      </form>
+
+      <ul class="msgs"></ul>
+
+      <p class="result"></p>
+
+    </section>
+    <script src="http://unpkg.com/jquery"></script>
+    <!--<script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="/static/ForexConverter.js"></script>-->
+  </body>
+</html>
